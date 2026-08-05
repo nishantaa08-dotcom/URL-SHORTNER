@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:rgba(0, 0, 0, 0.3);
+    gap: 50px;
+}
+h2{
+    opacity: 0.6;
+}
+#status{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250px;
+    text-decoration: solid;
+    animation: bounce 3s ease-in-out infinite;
+}
+#content{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}

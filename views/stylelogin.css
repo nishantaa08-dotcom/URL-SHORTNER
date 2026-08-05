@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255,255,255,0.7);
+    /* background-color: black; */
+    overflow: hidden;
+}
+.bodydarktheme{
+    background-color: black;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 370px;
+    padding: 20px;
+    border-radius: 3%;
+    border: 2px solid black;
+
+}
+.logindarktheme{
+    border: 2px solid white;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label{
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.labeldarktheme{
+    color: white;
+}
+.input0{
+    width: 370px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30em;
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.7);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.inputdarktheme{
+    color: white;
+    border: 2px solid white;
+}
+#btn{
+    height: 35px;
+    border: 1.6px solid black;
+    background: none;
+    border-radius: 30em;
+    cursor: pointer;
+}
+.btndatktheme{
+    color: white !important;
+    border: 1.6px solid white !important;
+}
+#login{
+    text-align: center;
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.flow{
+    margin-top: 10px;
+    position: fixed;
+    top: 80%;
+    left: 45%;
+}
+#dark{
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
+#popup{
+    position: fixed;
+    top: 3%;
+    right: -230px;
+    height: 40px;
+    width: 230px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s right;
+    transform: translateZ(0);
+    will-change: right;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.7),
+                -2px -2px 5px rgba(255,255,255,0.7),
+               inset -2px -2px 5px rgba(255,255,255,0.7),
+               inset 2px 2px 5px rgba(0,0,0,0.7);
+};
+.popupdarktheme{
+    background-color: black !important;
+};

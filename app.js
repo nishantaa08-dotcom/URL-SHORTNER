@@ -2,7 +2,7 @@ import express from "express";
 const app=express();
 import router from "./routes/routes.js"; //importing router function in this file//
 import router1 from "./routes/pagerouter.js";
-import {Noroutemiddleware} from "./middleware/Noroutemiddleware.js";
+import {Noroutemiddleware} from "./middleware/noroutemiddleware.js";
 import {globalmiddleware} from "./middleware/globalerrorhandler.js";
 import cookieParser from "cookie-parser";
 //using cookie parser middleware//

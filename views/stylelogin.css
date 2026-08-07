@@ -20,7 +20,6 @@ body{
     padding: 20px;
     border-radius: 3%;
     border: 2px solid black;
-
 }
 .logindarktheme{
     border: 2px solid white;
@@ -99,7 +98,23 @@ label{
                 -2px -2px 5px rgba(255,255,255,0.7),
                inset -2px -2px 5px rgba(255,255,255,0.7),
                inset 2px 2px 5px rgba(0,0,0,0.7);
-};
+}
 .popupdarktheme{
     background-color: black !important;
-};
+}
+@media (max-width:768px) {
+    .login{
+       width: 300px;
+       height: 300px;
+    }
+    .input0{
+        width: 270px;
+    }
+    #btn{
+        height: 25px;
+    }
+    .flow{
+        top: 80%;
+        left: 31%;
+    }
+}

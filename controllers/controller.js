@@ -30,6 +30,9 @@ export const signupuser =async(req,res,next)=>{
         next(error);
     }
 };
+export const signuppage=(req,res)=>{
+    return res.status(200).sendFile(path.join(process.cwd(),"mainurlpage","signuppage.html"));
+}
 export const loginpage=(req,res)=>{
     return res.status(200).sendFile(path.join(process.cwd(),"mainurlpage","indexloginpage.html"));
 }

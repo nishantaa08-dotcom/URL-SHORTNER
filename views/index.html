@@ -3,40 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./homepage.css">
 </head>
-<body id="main">
-    <div class="signup">
-        <div id="signup">SIGN-UP</div>
-        <form id="form">
-            <div id="name">
-                <label class="label">NAME :</label>
-                <input class="input0" type="text" name="name" placeholder="name" required>
+<body>
+    <ul class="navbar">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="/loginpage">LOGIN</a></li>
+        <li><a href="/signuppage">SIGNUP</a></li>
+    </ul>
+    <section id="home">
+        <h1><span>Simplify</span> Every Link You Share</h1>
+        <p class="space">Welcome to our URL Shortner platform.Manage,organise,and share your links with ease.Designed for speed,simplicity,and a smooth user experience.</p>
+
+        <h2>Why This Platform?</h2>
+        <p>Whether you are sharing links with friends,clients,or on social media,our platform helps</p>
+        <p>you keep everything clean and organised.</p>
+        <p>Sign in to start creating and managing your</p>
+        <p>shortened URLs.</p>
+        <p></p>
+        
+    </section>
+    <section id="about">
+        <h1>About Our Platform</h1>
+        <p class="space">Our URL Shortner is built to make link sharing easier and more efficient.Instead of using long,difficult-to-read URLs,you can generate clean and memorable links in just a few clicks after logging in.</p>
+        <h2>Our Missions</h2>
+        <p class="space">We aim to provide a fast,secure,and user-friendly platform that simplifies link management while delivering a smooth experience for every user.</p>
+        <h2>Features</h2>
+        <div class="container">
+            <div class="card">
+                <h4>Fast Performance</h4>
+                <p class="small">Create shortned URLs quickly with minimal waitnig time.</p>
             </div>
-            <div id="email">
-                <label class="label">EMAIL :</label>
-                <input class="input0" type="email" name="email" placeholder="email" required>
+            <div class="card">
+                <h4>Secure Links</h4>
+                <p class="small">Your URLs are handled securely with reliable backend validation</p>
             </div>
-            <div class="password">
-                <label class="label">PASSWORD :</label>
-                <input class="input0" id="pass" type="password" name="password" placeholder="password" required>
-                <label>
-                    <input type="checkbox" class="input1"id="look"><spam>Show Password</spam>
-                </label>
+            <div class="card">
+                <h4>Easy to Use</h4>
+                <p class="small">A clean and simple interface that everyone can understand</p>
             </div>
-            <div class="password">
-                <label class="label">CONFORM PASSWORD :</label>
-                <input class="input0" id="repass" type="password" name="conformpassword" placeholder="conformPassword" required>
+            <div class="card">
+                <h4>Responsive Design</h4>
+                <p class="small">Works smoothly across desktops,tablets,and mobile devices.</p>
             </div>
-            <button type="submit" id="btn">SIGNUP</button>
+            <div class="card">
+                <h4>Analytics</h4>
+                <p class="small">Coming Soon</p>
+            </div>
+        </div>
+        <h2>Our Vision</h2>
+        <p class="space">To create a reliable and modern URL managment platform platform that is simple,secure,and accessible for everypne</p>
+    </section>
+    <section id="contact">
+        <h1 class="glow">Get In Touch</h1>
+        <p class="space">Have a question,suggestion,or feedback? we would love to hear from you.Send us a message and we will get back to you as soon as possible.</p>
+        <div class="contactform">
+            <form id="form">
+                <div id="name">
+                    <label class="label">Your Name :</label>
+                    <input type="text"  name="name" placeholder="Enter your name" required>
+                </div>
+                <div id="email">
+                    <label class="label">Email Address :</label>
+                    <input type="email"  name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label>Message :</label>
+                    <textarea name="message" id="message" placeholder="Write your message"></textarea>
+                </div>
+            <button id="btn" type="submit">Send Message</button>
         </form>
     </div>
-    <div class="flow">
-        <a href="/loginpage">Have account then Login</a>
-    </div>
-    <button id="dark">Dark Mode</button>
-    <div id="popup">SIGNUP SUCCESFULLY</div>
+    </section>
+    <footer id="foot">
+        <h3><span>URL</span> shortener</h3>
+        <p class="space textfooter">Simple, fast, and secure link management.</p>
+        <ul id="column">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/loginpage">Login</a></li>
+            <li><a href="/signuppage">Signup</a></li>
+        </ul>
+        <p class="textfooter">&copy; 2026 URL Shortner.All Rights reserved</p>
+    </footer>
 </body>
-<script src="script.js"></script>
+<script src="/index.js"></script>
 </html>

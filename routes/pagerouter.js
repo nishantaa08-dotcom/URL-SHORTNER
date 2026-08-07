@@ -4,7 +4,7 @@ import { redirectingdata ,servingmainpage,loginpage,internalservererror,signuppa
 const router1 =express.Router();
 
 router1.get("/loginpage",loginpage);
-router.get("/signuppage",signuppage);
+router1.get("/signuppage",signuppage);
 router1.get("/mainpage",authentication(),servingmainpage);
 router1.get("/internalerror",internalservererror);
 //Function to redirect the url to  the users...

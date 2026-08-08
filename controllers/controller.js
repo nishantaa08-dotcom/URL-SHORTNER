@@ -119,7 +119,3 @@ export const redirectingdata=async(req,res)=>{
         next(error);
     }
 };
-   
-export const internalservererror=(req,res)=>{
-    return res.sendFile(path.join(process.cwd(),"mainurlpage","500.html"));
-}

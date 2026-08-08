@@ -1,123 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
+    background:linear-gradient(135deg,#020617,#172554,#581c87);
+    overflow: hidden;
+}
+#main{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(255,255,255,0.7);
-    overflow: hidden;
 }
-.maincontent{
-    color: white;
-    background-color: black;
-}
-.signup{
-    width: 400px;
-    height: 430px;
-    padding: 20px;
-    border-radius: 3%;
-    border: 2px solid black;
-}
-.signupdarktheme{
-    border: 2px solid white;
-}
-#form{
+.signupform{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(255,255,255,0.2);
+
 }
 label{
     display: block;
     margin-bottom: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.darklabeltheme{
-    color: white;
-}
-b{
-    display: block;
-    margin-top: 4px;
-}
-.input0{
-    width: 385px;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 30em;
-    color: black;
-    background: none;
-    outline: none;
-    border: 2px solid rgba(0,0,0,0.7);
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
     font-size: medium;
 }
-.darktheme{
-    color: white;
-    border: 2px solid white;
+input{
+    color: rgba(255, 255, 255, 0.746);
+    padding: 12px;
+    margin-bottom: 25px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(255,255,255,0.2);
+}
+.input1{
+    height: 15px;
+    width: 15px;
+}
+
+#signup{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: large;
+    font-size: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-shadow:0 0 10px rgb(244, 7, 217);
 }
 #btn{
-    height: 35px;
-    margin-top: 5px;
-    background: none;
-    border-radius: 30em;
-    cursor: pointer;
-    color: black;
-    border: 1.6px solid black;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition:all 2s;
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(255,255,255,0.2);
 }
-.btndarktheme{
-    color: white !important;
-    border: 1.6px solid white !important;
+#btn:hover{
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 40px rgba(255,255,255,0.6);
 }
-#signup{
-    font-size: larger;
+span{
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 5px;
+    font-weight: 300;
 }
 .flow{
-    position: fixed;
-    top: 85%;
-    left: 45%;
+    text-align: center;
 }
-#dark{
-    position: fixed;
-    top: 3%;
-    left: 3%;
-}
-#popup{
-    position: fixed;
-    top: 3%;
-    right: -230px;
-    height: 40px;
-    width: 230px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 2s right;
-    transform: translateZ(0);
-    will-change: right;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.7),
-                -2px -2px 5px rgba(255,255,255,0.7),
-               inset -2px -2px 5px rgba(255,255,255,0.7),
-               inset 2px 2px 5px rgba(0,0,0,0.7);
-}
-.popupdarktheme{
-    background-color: black ;
+a{
+    color: beige;
 }
 @media (max-width:768px) {
-    .signup{
-       width: 300px;
-       height: 450px;
-    }
-    .input0{
-        width: 270px;
-    }
-    #btn{
-        width: 290px;
-        height: 35px;
-    }
-    .flow{
-        top: 90%;
-        left: 31%;
+    .signupform{
+        max-width: 300px;
     }
 }

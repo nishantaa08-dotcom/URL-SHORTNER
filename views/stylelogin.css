@@ -1,120 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
+    background:linear-gradient(135deg,#020617,#172554,#581c87);
+    overflow: hidden;
+}
+#main{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(255,255,255,0.7);
-    /* background-color: black; */
-    overflow: hidden;
 }
-.bodydarktheme{
-    background-color: black;
-}
-.login{
+.loginform{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 400px;
-    height: 370px;
-    padding: 20px;
-    border-radius: 3%;
-    border: 2px solid black;
-}
-.logindarktheme{
-    border: 2px solid white;
-}
-#form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(255,255,255,0.2);
+
 }
 label{
     display: block;
-    color: black;
-    margin-bottom: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.labeldarktheme{
-    color: white;
-}
-.input0{
-    width: 370px;
-    padding: 10px;
     margin-bottom: 10px;
-    border-radius: 30em;
-    background: none;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(0,0,0,0.7);
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
     font-size: medium;
 }
-.inputdarktheme{
-    color: white;
-    border: 2px solid white;
+input{
+    color: rgba(255, 255, 255, 0.746);
+    padding: 12px;
+    margin-bottom: 25px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(255,255,255,0.2);
+}
+#look{
+    width: 10px;
+    height: 10px;
 }
 #btn{
-    height: 35px;
-    border: 1.6px solid black;
-    background: none;
-    border-radius: 30em;
-    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition:all 2s;
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(255,255,255,0.2);
 }
-.btndatktheme{
-    color: white !important;
-    border: 1.6px solid white !important;
+#btn:hover{
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 0 40px rgba(255,255,255,0.6);
 }
 #login{
     text-align: center;
-    font-size: larger;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+    text-shadow:0 0 20px rgba(0, 255, 13, 0.934);
+}
+.show{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+span{
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 .flow{
-    margin-top: 10px;
-    position: fixed;
-    top: 80%;
-    left: 45%;
+    text-align: center;
 }
-#dark{
-    position: fixed;
-    top: 3%;
-    left: 3%;
-}
-#popup{
-    position: fixed;
-    top: 3%;
-    right: -230px;
-    height: 40px;
-    width: 230px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 2s right;
-    transform: translateZ(0);
-    will-change: right;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.7),
-                -2px -2px 5px rgba(255,255,255,0.7),
-               inset -2px -2px 5px rgba(255,255,255,0.7),
-               inset 2px 2px 5px rgba(0,0,0,0.7);
-}
-.popupdarktheme{
-    background-color: black !important;
+a{
+    color: beige;
 }
 @media (max-width:768px) {
-    .login{
-       width: 300px;
-       height: 300px;
-    }
-    .input0{
-        width: 270px;
-    }
-    #btn{
-        height: 25px;
-    }
-    .flow{
-        top: 80%;
-        left: 31%;
+    .loginform{
+        max-width: 300px;
     }
 }

@@ -11,8 +11,8 @@ const showingdatatoclient=(data)=>{
         const objecturl=data.url;
         const shorturl=truncateurl(objecturl);
         const li=document.createElement("li");
-        li.innerHTML=`<a href="/${data.shortcode}" target="_blank">
-        ${window.location.origin}/${data.shortcode}</a> - ${shorturl}`;
+        li.innerHTML=`<a href="/s/${data.shortcode}" target="_blank">
+        ${window.location.origin}/s/${data.shortcode}</a> - ${shorturl}`;
         document.getElementById("fdata").appendChild(li);
 }
 const button=document.getElementById("btn");
@@ -36,7 +36,7 @@ button.addEventListener("click",(event)=>{
         if(!response.ok){
             try{
                 if(response.status===500){
-                    window.location.href="/internalerror";;
+                    window.location.href="/500.html";;
                     return;
                 }
                 const finalresponse = await response.json();

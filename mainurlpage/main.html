@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="/style1.css">
 </head>
 <body>
-    <div class="container">
-        <div class="name">URL SHORTNER</div>
-        <form id="data-url">
-            <div class="url">
-                <label> ENTER URL</label>
-                <input type="link" name="url" placeholder="link">
-            </div>
-            <div class="url">
-                <label>ENTER SHORTCODE</label>
-                <input type="link" name="shortcode" placeholder="shortcode">
-            </div>
-            <div class="click">
-                <button id="btn">CLICK</button>    
-            </div>   
-        </form>
+    <div class="heading">
+        <h1><span>Welcome</span> back</h1>
+        <p>Create and manage your short links.</p>
     </div>
-    <div class="showdata">
-        <div class="name">FINAL--DATA</div>
-        <ul id="fdata"></ul>
+    <div id="main">
+        <div class="container">
+            <form id="data-url">
+                <h4>Create short URL</h4>
+                <div class="url">
+                    <label> ENTER URL</label>
+                    <textarea type="link" class="scroll" name="url" placeholder="link"></textarea>
+                </div>
+                <div class="url">
+                    <label>ENTER SHORTCODE</label>
+                    <input type="link" name="shortcode" placeholder="shortcode">
+                </div>
+                <div class="click">
+                    <button id="btn">SHORT-URL</button>    
+                </div>   
+            </form>
+        </div>
+        <div class="showdata">
+            <h3>Your Short URLs</h3>
+            <h5>Your generated links appear here</h5>
+            <ul id="fdata"></ul>
+        </div>
     </div>
+   
     <script src="/main.js"></script>
 </body>
 </html>

@@ -56,7 +56,7 @@ form.addEventListener("submit",(event)=>{
         if(!response.ok){
             if(response.status===500){
                 console.log("500");
-                window.location.href="/internalerror";
+                window.location.href="/500.html";
                 return;
             }
             const data = await response.json();

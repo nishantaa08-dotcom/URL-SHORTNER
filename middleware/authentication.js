@@ -6,6 +6,7 @@ export const authentication =()=>{
             let usersessionid =req.cookies.session_id;
             let sessiondatabase = await db.collection("session").findOne({sessionid:usersessionid});
             if(!sessiondatabase){
+                res.clearCookie("session_id");
                 if(req.originalUrl.startsWith("/api")){
                     return res.status(401).json({
                         message:"unauthorized person login again",

@@ -50,6 +50,12 @@ export const logging=async(req,res)=>{
         if(!match){
             return res.status(400).json({message:"Invalild credentials"});
         }
+        //revocation of old session id....
+        let existingsessiondocument=await db.collection("session").findOne({user_id:logindatafromdatabase._id});
+        if(existingsessiondocument){
+            await db.collection("session").deleteOne({user_id:logindatafromdatabase._id});
+            res.clearCookie("session_id");
+        };
         //creating random number for the sessions..
         const session_id =crypto.randomBytes(20).toString("hex");
         //making sesion object so that its easy to store data in the database....

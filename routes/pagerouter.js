@@ -7,6 +7,5 @@ router1.get("/loginpage",loginpage);
 router1.get("/signuppage",signuppage);
 router1.get("/mainpage",authentication(),servingmainpage);
 //Function to redirect the url to  the users...
-router1.get("/s/:shortcode",authentication(),redirectingdata);
-
+router1.get("/s/:shortcode",redirectingdata);
 export default router1;
